@@ -3,3 +3,4 @@ secrets.py
 .DS_Store
 __pycache__/
 .venv/
+tweepy.log
