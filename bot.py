@@ -15,7 +15,7 @@ def getAPI(api_key, api_secret, access_token, access_token_secret):
     api = tweepy.API(auth)
     return api
 
-def classifyTweet(tweet: list[str]):
+def classifyTweet(tweet):
     with open('finalPipeline.pickle' , 'rb') as f:
         clf = pickle.load(f)
     tweet = [tweet]
